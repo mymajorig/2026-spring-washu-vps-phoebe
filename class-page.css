@@ -1,0 +1,9 @@
+
+#header{
+    display: flex;
+}
+
+#header #img{
+    flex: 1;
+}
+

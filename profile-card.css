@@ -1,0 +1,22 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+#font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.category{
+    font-weight: bold;
+    color: midnightblue;
+}
+
+#goodreads-link{
+    text-decoration: underline;
+    color: #603939;
+}
+
+.name{
+    font-family: Arial;
+}
