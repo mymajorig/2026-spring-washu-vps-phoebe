@@ -1,0 +1,29 @@
+*{
+    background-color: #d8f2fe;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.section{
+    border: 2px solid #354c7c;
+    border-radius: 20px;
+    width: 70%;
+    text-align: center;
+}
+
+#logo{
+    max-width: 100%;
+}
+
+#logo img{
+    width: 100%;
+    height: auto;
+}
+
