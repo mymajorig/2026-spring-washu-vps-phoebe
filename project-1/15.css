@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-image: url(https://images.editor.website/uploads/b/4f971f80-6b67-11ea-87d2-a768189391fb/blue-cube.png?width=400);
+    background-size: 80% auto;    /*makes height adjust with width */
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-color: rgb(226, 215, 200);
+    min-height: 100vh;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 2rem;
+    width: 100%;
+    font-family: "Marcellus", serif;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+}
+
+li{
+
+}
