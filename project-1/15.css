@@ -10,6 +10,7 @@ body{
     background-position: center;  
     background-color: rgb(226, 215, 200);
     min-height: 100vh;
+    text-transform: lowercase;
 }
 
 .section{
@@ -19,8 +20,13 @@ body{
     justify-content: center;
     gap: 10px;
     padding: 2rem;
-    width: 100%;
+    width: 90%;
     font-family: "Marcellus", serif;
+    transition: all 0.1s ease-in-out;
+}
+
+.section:hover{
+    border: 3px solid rgb(56, 49, 49);
 }
 
 h1{
@@ -29,6 +35,57 @@ h1{
     letter-spacing: .3rem;
 }
 
-li{
+#logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+
+#logo img{
+   max-width: 300px;
+   height: auto;
+}
+
+summary{
+    font-size: x-large;
+    transition: all 0.3s ease-in-out;
+}
+
+summary:hover{
+    text-transform: capitalize;
+    color: rgb(40, 89, 127);
+    transform: scale(1.5);
+    padding: 1.5rem;
+}
+
+li{
+    font-size: large;
+}
+
+#brew{
+background-color: rgba(160, 144, 130, 0.919);
+border-radius: 30px;
+}
+
+#espresso{
+background-color: rgba(160, 144, 130, 0.919);
+border-radius: 30px;
+}
+
+#food{
+background-color: rgba(160, 144, 130, 0.919);
+border-radius: 30px;
+}
+
+#contact-info{
+background-color: rgba(68, 147, 211, 0.574);
+border-radius: 30px;
+}
+
+#ready{
+background-color: rgba(160, 144, 130, 0.919);
+border-radius: 30px; 
+}
+
