@@ -1,0 +1,50 @@
+*{
+    
+     font-family: "Josefin Sans", sans-serif;
+}
+
+body{
+    background-color: #75655a;
+    display: flex;
+    flex-direction: column;
+    color:#F2F0EF;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.section{
+    text-align: center;
+    border-bottom: 3px solid #d8f2fe;
+    border-width: 100%;
+    padding: 1rem;
+    width: 100%;
+}
+
+.subsection{
+    text-align: center;
+}
+
+h1{
+    background-color: #301e12;
+    padding: 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+h2{
+    color: #d8f2fe;
+    text-decoration: underline;
+}
+
+#contact-info{
+    background-color:#d8f2fe;
+    color:#301e12;
+
+}
+
+#contact-info h1{
+    color:#F2F0EF;
+}
+
+

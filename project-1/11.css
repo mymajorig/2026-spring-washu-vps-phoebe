@@ -12,10 +12,11 @@ body{
 }
 
 .section{
-    border: 2px solid #354c7c;
+    border: 5px solid #354c7c;
     border-radius: 20px;
     width: 70%;
     text-align: center;
+    padding: 1rem;
 }
 
 #logo{
