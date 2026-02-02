@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+     font-family: "Nunito", sans-serif;
+}
+main{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section{
+    height: fit-content;
+    width: 100%;
+    padding: 1rem;
+}
+
+/*header*/
+#logo{
+    background-color: #313131;
+    border-radius: 100%;
+    padding: 0.5rem;
+}
+
+#logo img {
+     width: 100%; height: 100%; object-fit: cover; 
+    }
+
+
+#navbar{
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding-bottom: 1rem;
+    
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+}
+
+.links a{
+    text-decoration: none;
+    color: #313131;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+    transition: 0.3s all ease-in-out;
+}
+
+.links a:hover{
+    background-color: lightblue;
+}
+
+/*table stuff*/
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td { 
+    padding: 10px; 
+    border: 1px solid #213F65;
+ }
+
+#ready{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #89B2DB;
+    color: #302317;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+#ready .subsection{
+    border-left: 4px solid black;
+    padding: 2rem;
+}
+
+#ready-pic{
+    display: grid;
+    grid-gap: 20px;
+    font-size: 3rem;
+    align-items: center;
+    justify-items: center;
+}
+
+#ready-pic img{
+     max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;   
+    flex-shrink: 0; 
+}
+
+#ready .subsection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+td{
+    font-weight: bold;
+}
+
+
+#brewed-to-order{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+justify-items: center;
+grid-gap: 40px;
+color: seashell;
+background-color: #595858;
+}
+
+#brewed-to-order h1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: #213F65;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+#brewed-to-order .subsection{
+    background-color: #213F65;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+/*espresso and speacialty drinks*/
+#espresso{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 1rem;
+    background-color: #89B2DB;
+    color: #303030;
+    transition: all ease-in-out 0.3s;
+}
+
+#espresso:hover{
+    background-image: url(https://media.istockphoto.com/id/1467199060/photo/cup-of-coffee-with-smoke-and-coffee-beans-on-old-wooden-background.webp?b=1&s=612x612&w=0&k=20&c=pYVOIV8N70JYqIbnGSJdtGftKYleSMkWg4r_bnVef_8=);
+    color: seashell;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#espresso h1{
+    grid-column: 1/3;
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+/*FOOD*/
+
+#food{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #313131;
+    color: seashell;
+}
+
+#food .subsection{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    font-size: larger;
+}
+
+#food p:hover{
+    background-color: lightblue;
+    color: #313131;
+}
+
+#food h1{
+    font-size: 5rem;
+}
+
+#food p{
+    padding: 1rem;
+    text-align: center;
+    transition: all 0.2s ease-in;
+}
+
+/*contact*/
+
+#contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
