@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+}
+
+:root{
+    --dark-brown: #3D2412;
+    --blue: #096c6c;
+    --beige: #EDE8D0;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: beige;
+    background-color: var(--dark-brown);
+    padding: 1rem;
+}
+
+header #top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#bottom h1{
+    font-size: 3rem;
+}
+
+#top #logo{
+    width: 5%;
+    max-width: 100%;
+    height: auto;
+}
+
+#links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    padding-left: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+#links a{
+    transition: all 0.2s ease-in;
+}
+
+#links a:hover{
+    color: var(--blue);
+}
+
+#links ul a{
+  text-decoration: none;
+  color: var(--beige);
+}
+
+header #bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*ready*/
+
+#ready{
+    padding: 1rem;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#ready .subsection{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    color: var(--blue);
+}
+
+#ready h1{
+    font-size: 2rem;
+    color: var(--dark-brown);
+}
+
+#ready h2{
+    color: var(--dark-brown);
+}
