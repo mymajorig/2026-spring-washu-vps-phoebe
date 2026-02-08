@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    
+}
+
+:root{
+    --dark-brown: #3D2412;
+    --blue: #0083a9;
+    --beige: #f2edda;
+    --off-white: #F2F0EF;
+}
+
+main{
+     letter-spacing: 2px;
+     background-color: #F2F0EF;
+}
+
+h1{font-size: 3rem;}
+
+h2{font-size: 2rem;}
+
+/*header stuff */
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #F2F0EF;
+    background-color: var(--dark-brown);
+    padding: 1rem;
+}
+
+header #top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#bottom h1{
+    font-size: 3rem;
+}
+
+#top #logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+    width: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+#logo-img{
+  width: 40%;
+  height: 40%;
+}
+
+#links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style-type: none;
+    padding-left: 0; 
+    margin: 0;
+    text-align: center;
+}
+
+#links a{
+    transition: all 0.2s ease-in;
+}
+
+#links a:hover{
+    color: var(--blue);
+}
+
+#links ul a{
+  text-decoration: none;
+  color: var(--beige);
+}
+
+header #bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/*ready stuff*/
+
+#ready{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   padding: 1rem;
+   align-items: center;
+   justify-items: center;
+}
+
+#ready #text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+#ready #text #content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#subsection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+table {
+  width: 280px;
+  border-collapse: collapse;
+  background: var(--off-white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin: 15px 0;
+}
+
+th {
+  background: var(--blue);
+  color: white;
+  padding: 10px;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  color: var(--dark-brown);
+  border-bottom: 1px solid rgba(61,36,18,0.2);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: rgba(0,131,169,0.08);
+}
+
+
+#ready-img img{
+    width: 100%;
+}
+

@@ -3,17 +3,29 @@
 
 *{
     margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: lowercase;
+
 }
 
 main{
     padding: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+     justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/8d/1c/74/caption.jpg?w=900&h=500&s=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 body{
-    
+    background-color: #3D2412;
+    display: flex;
+    flex-direction: column;
+   
 }
 
 
@@ -23,29 +35,75 @@ body{
     --beige: #f2edda;
 }
 
+h1{
+    font-size: 4rem;
+}
+
+
 .section{
-width: 300px;
-  height: 50px; 
+width: 50vw;
+  height: 30vh; 
   overflow: hidden;
   background-color: #f0f0f0;
-  padding: 10px;
+  padding: 1rem;
   transition: height 0.3s ease; 
   border: 1px solid #ccc;
   cursor: pointer;
-  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  text-align: center;
+   padding: 3rem;
+   border-radius: 30px;
+transform: scale(0.9);
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.section .content, .section h2, .section table {
+
+.subsections{
+    display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  
+}
+
+.subsection{
+    display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.content{
+display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section .content,
+.section h2,
+.section table {
   opacity: 0;
+  transition: opacity 0.3s ease; /* fade in/out over 0.3 seconds */
 }
 
 .section:hover {
-  height: fit-content; 
+  height: fit-content;
+  background-color: var(--beige);
 }
 
-.section:hover .content, .section h2, .section table  {
+.section:hover .content,
+.section:hover h2,
+.section:hover table {
   opacity: 1;
 }
+
 
 
 
@@ -70,9 +128,16 @@ header #top{
 }
 
 #top #logo{
-    width: 5%;
+  display: flex;
+  gap: 10px;
+    width: 10%;
     max-width: 100%;
     height: auto;
+}
+
+#logo-img{
+  width: 40%;
+  height: 40%;
 }
 
 #links ul{
@@ -106,10 +171,37 @@ header #bottom{
     gap: 1rem;
 }
 
+/*ready*/
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* removes double borders */
+}
+
+th, td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f3f3f3;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: #f7f7f7; /* subtle hover effect */
+}
+
+
+
 /*contact*/
 #contact-info{
     background-color: var(--dark-brown);
     color: var(--beige);
+    padding: 1rem;
    
 }
 
