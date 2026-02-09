@@ -1,6 +1,7 @@
 *{
     margin: 0;
     text-transform: lowercase;
+    font-weight: 400;
 }
 
 :root{
@@ -27,6 +28,7 @@ h1{
 h2{
     font-size: 2rem;
     color: #3D2412;
+    
 }
 
 h2::after{
@@ -124,12 +126,12 @@ header #bottom{
    gap: 6rem;
 }
 
-#ready 
+
 
 #ready #text{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
     align-items: center;
 }
 
@@ -279,7 +281,7 @@ gap: 3rem;
 /*food*/
 #food {
   position: relative;
-  background-image: url("https://theamericanclassic.org/wp-content/uploads/2013/12/blueprint_coffee_14_watermarked.jpg");
+  background-image: url("https://i.pinimg.com/736x/c2/5a/ac/c25aaca25a403b9513ecab5ded2854c9.jpg");
   background-size: cover;     
   background-position: center; 
   background-repeat: no-repeat;
@@ -325,6 +327,39 @@ gap: 3rem;
     gap: 2rem;
 }
 
+/*footer*/
+
+#contact-info{
+    background-color: var(--dark-brown);
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--beige);
+    padding: 1rem;
+   
+}
+
+#contact-info h1{
+    font-size: 2rem;
+    border: none;
+}
+
+#contact-info .content{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#contact-info a{
+    text-decoration: underline;
+    color: var(--beige);
+}
+
+
 
 
 /*media query*/
@@ -341,6 +376,115 @@ gap: 3rem;
   #img-1, #img-2 {
     grid-column: auto;
     grid-row: auto; 
+  }
+
+  @media (max-width: 768px) {
+
+  /* HEADER*/
+  #top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #links ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem;
+  }
+
+  #logo {
+    width: auto;
+  }
+
+  /* READY  */
+  #ready {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  #ready-img img {
+    max-width: 85%;
+  }
+
+  /* BREW  */
+  #brew .subsections {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .subsection-img {
+    width: 70vw;
+  }
+
+  /* ESPRESSO  */
+  #espresso {
+    gap: 4rem;
+  }
+
+  #espresso-images img {
+    aspect-ratio: 4/3;
+  }
+
+  /* FOOD SECTION  */
+  #food-container .subsections {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  #food .subsection {
+    width: 85%;
+  }
+
+  /* FOOTER  */
+  #contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+}
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  /* header links stack nicer */
+  #links ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* espresso */
+  #espresso {
+    gap: 3rem;
+  }
+
+  #espresso-images img {
+    aspect-ratio: 4/3;
+  }
+
+  /* tables */
+  table {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* footer */
+  #contact-info {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
