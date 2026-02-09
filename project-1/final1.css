@@ -20,6 +20,7 @@ h1{
     padding: 1rem;
     background-color: var(--dark-brown);
     color: var(--off-white);
+    border: 7px solid var(--blue);
 }
 
 
@@ -122,6 +123,8 @@ header #bottom{
    justify-items: center;
    gap: 6rem;
 }
+
+#ready 
 
 #ready #text{
     display: flex;
