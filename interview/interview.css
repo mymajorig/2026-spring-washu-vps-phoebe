@@ -24,6 +24,7 @@
 .header-img h1{
     color: var(--beige);
     font-size: 9rem;
+    text-align: center;
 }
 
 /*main*/
@@ -46,6 +47,8 @@
     font-size: 1rem;
     text-align: center;
     color: var(--beige);
+    font-weight: 400;
+    letter-spacing: 1.5px;
 }
 
 .response{
@@ -66,10 +69,16 @@
 }
 
 .response img{
-    width: 20vw;
+    width: 100%;
+    max-width: 300px;
     aspect-ratio: 1;
     object-fit: cover;
 }
 
-
+@media (max-width: 768px){
+    .response{
+        grid-template-columns: 1fr;
+        padding: 4rem 1.5rem;
+    }
+}
 
